@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selamat Ulang Tahun</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+</head>
+<body>
+
+  <!-- Confetti canvas -->
+  <canvas id="confetti"></canvas>
+
+  <!-- Hello Kitty floating deco -->
+  <div class="hk-deco">🎀</div>
+  <div class="hk-deco">🌸</div>
+  <div class="hk-deco">💗</div>
+  <div class="hk-deco">🎀</div>
+
+  <!-- Balon -->
+  <div class="balloons">
+    <div class="balloon b1">🩷</div>
+    <div class="balloon b2">🎀</div>
+    <div class="balloon b3">🩷</div>
+    <div class="balloon b4">🌸</div>
+    <div class="balloon b5">🩷</div>
+  </div>
+
+  <div class="container">
+    <!-- Foto -->
+    <div class="photo-frame">
+      <img
+        src="/img/gweh.webp"
+        alt="Foto Ulang Tahun"
+        class="photo"
+      />
+      <div class="photo-glow"></div>
+    </div>
+
+    <!-- Hello Kitty badge -->
+    <div class="hk-badge">🎀 Hello Kitty Special 🎀</div>
+
+    <!-- Teks utama -->
+    <div class="stars-row">🌸 💗 🎀 💗 🌸</div>
+    <h1 class="title">Selamat Ulang Tahun!</h1>
+    <p class="name">🎂 Ega Zailila 🎂</p>
+
+    <div class="message">
+      <p>Semoga hari istimewamu dipenuhi kebahagiaan,</p>
+      <p>tawa, dan semua hal indah yang kamu impikan.</p>
+      <p>Semoga setiap langkahmu selalu diberkahi,</p>
+      <p>dan semua harapanmu terwujud satu per satu. 🌸</p>
+    </div>
+
+    <!-- Kue ulang tahun -->
+    <div class="cake">
+      <div class="cake-top">
+        <span class="candle">🕯️</span>
+        <span class="candle">🕯️</span>
+        <span class="candle">🕯️</span>
+      </div>
+      <div class="cake-body">🎂</div>
+    </div>
+
+    <button class="wish-btn" onclick="blowCandles()">Tiup Lilin 🎉</button>
+
+    <div class="wish-text" id="wishText"></div>
+
+    <!-- Dekorasi Hello Kitty -->
+    <div class="deco-row">🎀 🌸 💗 🌸 🎀</div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
